@@ -1,43 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>CSE291-J00: Deep Learning Lab</title>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CSE152: Introduction to Computer Vision</title>
+
     <link rel="stylesheet" type="text/css" href="cs468.css">
 </head>
 
 <body>
-    <h1 class="title">Deep Learning Lab</h1>
-    <h2 class="title">CSE291-J00 - Fall 2020</h2>
+    <p>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</br>UNIVERSITY OF CALIFORNIA, SAN DIEGO</p>
+    <h1 align="center">
+        <font color="#800000">CSE291-J00: Deep Learning Lab (Computer Vision)</font>
+    </h1>
+    <p></p>
+    <h2 align="center">
+        <font color="#800000">Fall 2020</font>
+    </h2>
+    <p></p>
+    <br>
+
     <div id="content">
         <div class="underlinemenu">
             <ul>
+                <li><a href="#announcements">Announcements</a></li>
                 <li><a href="#info">General Info</a></li>
+                <li><a href="#staff">Course Staff</a></li>
                 <li><a href="resources.html">Resources</a></li>
-                <!-- <li><a href="">Piazza</a></li> -->
+                <!--<li><a href="schedule.html">Schedule &amp; Assignments</a></li>-->
+                <li><a href="">Piazza</a></li>
             </ul>
         </div>
-
+        <div class="underlinemenu"> </div>
+        <a name="announcements"></a>
         <h3>Announcements</h3>
-        <div>
-            <p class="color-danger">2020.09.25: Welcome to the course!</p>
-        </div>
+        <ul>
+            <li>Welcome to the course! </li>
+            <li>Please sign up with <a href="">Piazza</a></li>
+        </ul>
         <br>
-
-        <h3 id="info">General Information</h3>
-
-        <h4>Times &amp; Places</h4>
-        <p>TuTh 12:30PM - 1:20PM</p>
-
-        <h4>Course Staff</h4>
-        <table id="hor-minimalist-a">
+        <br>
+        <a name="info"></a>
+        <hr>
+        <h3>General Information</h3>
+        <strong>Times &amp; Places</strong>
+        <br>Lecture: TuTh 12:30PM - 1:50PM, Zoom
+        <br><br>
+        <a name="staff"></a>
+        <strong>Course Staff</strong>
+        <table id="hor-minimalist-a" summary="Course Staff">
             <thead>
                 <tr>
-                    <th scope="col"></th>
+                    <th scope="col"><br>
+                    </th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Office Hours</th>
@@ -47,64 +62,54 @@
             <tbody>
                 <tr>
                     <td>Instructor</td>
-                    <td>Hao Su</td>
-                    <td>haosu@eng.ucsd.edu</td>
+                    <td>Prof. Hao Su</td>
+                    <td>haosu@ucsd.edu </td>
                     <td>TBD</td>
-                    <td>Remote (see canvas)</td>
+                    <td>Check Piazza</td>
                 </tr>
                 <tr>
                     <td>Course Assistant</td>
                     <td>Jiayuan Gu</td>
-                    <td>jigu@eng.ucsd.edu</td>
+                    <td>jigu@ucsd.edu </td>
                     <td>TBD</td>
-                    <td>Remote (see canvas)</td>
-                </tr>
-                <tr>
-                    <td>Course Assistant</td>
-                    <td>Tongzhou Mu</td>
-                    <td>t3mu@eng.ucsd.edu</td>
-                    <td>TBD</td>
-                    <td>Remote (see canvas)</td>
+                    <td>Check Piazza</td>
                 </tr>
             </tbody>
         </table>
+        <br>
 
-        <h4>Overview</h4>
-        <p>
-            Deep learning has become a basic method for many application domains of artificial intelligence. While
-            teaching materials of deep learning are easily accessible today, it is still tricky to practically apply the
-            method after learning the theories. Many skills, such as choosing the correct toolchain, cleaning and
-            augmenting training data, diagnosing errors, interpreting learned models, designing ablation experiments,
-            have to be trained through extensive practices, better with instructions from experienced researchers.
+        <h4>Syllabus</h4>
+        <a href="./resources/syllabus.pdf">PDF</a>
 
-            This course aims to train students to solve challenging real problems, by working on a single project for
-            the whole quarter. Candidate projects are carefully selected open challenges in Computer Vision (e.g., 3D
-            segmentation of autonomous driving scenes, http://semantic-kitti.org/). The organization of the course will
-            be in the flipped-class format: groups of students will collaborate to work on the project after class; the
-            main
-            content of the classes would be the discussions between the instructing staff and each group. Resources,
-            guidance and feedback will be provided. It is expected that each student will invest above 20 hours per
-            week.
+        <h4>Objectives</h4>
+        <p>Course description: Deep learning has become a basic method for many application domains of artificial intelligence. While teaching materials of deep learning are easily accessible today, it is still tricky to practically apply the method after learning the theories. Many skills, such as choosing the correct toolchain, cleaning and augmenting training data, diagnosing errors, interpreting learned models, designing ablation experiments, have to be trained through extensive practices, better with instructions from experienced researchers.
 
-        </p>
+        This course aims to train students to solve challenging real problems, by working on a single project for the whole quarter. Candidate projects are carefully selected open challenges in Computer Vision (e.g., 3D segmentation of autonomous driving scenes, http://semantic-kitti.org/). The organization of the course will be in the flipped-class format: groups of students will collaborate to work on the project offline;  the main content of the classes would be the discussions between the instructing staff and each group. Resources, guidance and feedback will be provided. It is expected that each student will invest above 20 hours per week.</p>
 
-        <h4>Prerequisites</h4>
-        <p>
-            Participants have to be master or undergraduate students who have taken deep learning related courses on
-            campus, or have previous research experiences in academia/industry labs. The instructor will conduct manual
-            screening by checking the background of applicants submitted at this <a
-                href="https://forms.gle/PH57h4HRMwuH8ZEv8">portal</a>.
-        </p>
+        <p>Prerequisite: Participants have to be master or undergraduate students who have taken deep learning related courses on campus, or have previous research experiences in academia/industry labs. The instructor will conduct manual screening by checking the background of applicants submitted at this portal: https://forms.gle/PH57h4HRMwuH8ZEv8.</p>
 
-        <!-- <h4>Grading (tentative)</h4>
+        <h4>Grading (tentative)</h4>
         <ul>
-            <li>Class presense: 10%</li>
-            <li>Mid-term project: 30%</li>
-            <li>Paper presentation 30%</li>
-            <li>Final project: 30%</li>
-        </ul> -->
-    </div>
+            <li>Participation of discussions in course 40%. </li>
+            <li>Mid-term milestone report 30%. </li>
+            <li>Final report 30%</li>
+        </ul>
+        <br>
 
+        <hr>
+
+        <!--
+                <h4>Acknowledgements</h4>		
+                Many of the lectures are based on the lecture slides from:
+                <ul>
+                <li><a href="http://graphics.stanford.edu/courses/cs468-17-spring/">CS468: Machine Learning on 3D Data</a></li>
+                <li><a href="http://cs233.stanford.edu/">CS233: Geometrical and Topological Data Analysis</a></li>
+                <li><a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition</a></li>
+                <li><a href="http://people.cs.umass.edu/%7Ekalo/datadrivenshape/">Data Driven Shape Analysis and Processing</a></li>
+                </ul>
+                We would like to thank all authors for sharing their resources.
+            -->
+    </div>
 </body>
 
 </html>
