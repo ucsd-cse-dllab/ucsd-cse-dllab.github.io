@@ -1,33 +1,102 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>CSE152: Introduction to Computer Vision</title> 
-        <link rel="stylesheet" type="text/css" href="cs468.css">
-    </head>
-    <META http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-    <body>
-        <p>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</br>UNIVERSITY OF CALIFORNIA, SAN DIEGO</p>
-        <h1 align="center"><font color="#800000">CSE152: Introduction to Computer Vision</font></h1>
-        <p></p><h2 align="center"><font color="#800000">Fall 2020</font></h2><p></p>
-        <br>
-        <H1 align="center">Resources</h1>
-            <BR>
-            <div id="content">
-            <h4> Getting Help</h4>
-            <p align="left">The IDEA Engineering Student Center, located just off the lobby of Jacobs Hall, is a hub for student engagement, academic enrichment, personal/professional development, leadership, community involvement, and a respectful learning environment for all.  The Center offers a variety of programs, listed in the IDEA Center Facebook page at http://www.facebook.com/ucsdidea/ (you are welcome to Like this page!) and the Center web site at http://idea.ucsd.edu/.  The IDEA Center programs support both undergraduate students and graduate students.</p>
+<!DOCTYPE html>
+<html lang="en">
 
-            <h4>Diversity and Inclusion</h4>
-            <p align="left">We are committed to fostering a learning environment for this course that supports a diversity of thoughts, perspectives and experiences, and respects your identities (including race, ethnicity, heritage, gender, sex, class, sexuality, religion, ability, age, educational background, etc.).  Our goal is to create a diverse and inclusive learning environment where all students feel comfortable and can thrive.</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Resources</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" type="text/css" href="cs468.css">
+</head>
 
-            <p align="left">Our instructional staff will make a concerted effort to be welcoming and inclusive to the wide diversity of students in this course.  If there is a way we can make you feel more included please let one of the course staff know, either in person, via email/discussion board, or even in a note under the door.  Our learning about diverse perspectives and identities is an ongoing process, and we welcome your perspectives and input.</p>
+<style>
+    .optional {color: #0051ff}
+</style>
 
-            <p align="left">We also expect that you, as a student in this course, will honor and respect your classmates, abiding by the UCSD Principles of Community (https://ucsd.edu/about/principles.html).  Please understand that others’ backgrounds, perspectives and experiences may be different than your own, and help us to build an environment where everyone is respected and feels comfortable.</p>
+<body>
+    <p>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</br>UNIVERSITY OF CALIFORNIA, SAN DIEGO</p>
+    <h1 class="title">CSE291-J00: Deep Learning Lab (Computer Vision)</h1>
+    <p></p>
+    <h2 class="title"><a href="index.html">Fall 2020</a></h2>
+    <p></p>
+    <br>
 
-            <p align="left">If you experience any sort of harassment or discrimination, please contact the instructor as soon as possible.   If you prefer to speak with someone outside of the course, please contact the Office of Prevention of Harassment and Discrimination: https://ophd.ucsd.edu/.</p>
+    <div id="content">
+        <h2 style="text-align:center">Paper Reading List</h2>
+        <div>
+            <h3>Long-tailed Detectection</h3>
+            <h4>Papers to compare</h4>
+            <ul>
+                <li>Focal Loss for Dense Object Detection</li>
+                <li>Equalization Loss for Long-Tailed Object Recognition (LVIS 2019 champion)</li>
+                <li>Decoupling Representation and Classifier for Long-Tailed Recognition (LVIS 2020 baseline)</li>
+                <li>Long-Tailed Classification by Keeping the Good and Removing the Bad Momentum Causal Effect</li>
+                <li class="optional">Learning to Segment the Tail</li>
+                <li class="optional">1st Place Solution of LVIS Challenge 2020: A Good Box is not a Guarantee of a Good Mask</li>
+            </ul>
+            <span class="optional">At least 5 papers should be compared. You can choose one of colored papers.</span>
+            <h4>Reference</h4>
+            <ul>
+                <li>Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</li>
+                <li>Mask R-CNN</li>
+                <li>Feature Pyramid Networks for Object Detection</li>
+                <li>LVIS: A Dataset for Large Vocabulary Instance Segmentation</li>
+            </ul>
+        </div>
 
-            <h4>Students with Disabilities</h4>
-            <p align="left">We aim to create an environment in which all students can succeed in this course.  If you have a disability, please contact the Office for Students with Disability (OSD), which is located in University Center 202 behind Center Hall, to discuss appropriate accommodations right away.  We will work to provide you with the accommodations you need, but you must first provide a current Authorization for Accommodation (AFA) letter issued by the OSD.  You are required to present their AFA letters to Faculty (please make arrangements to contact me privately) and to the OSD Liaison in the department in advance so that accommodations may be arranged.</p>
-            </div>
+        <div>
+            <h3>Instance Segmentation</h3>
+            <h4>Papers to compare</h4>
+            <ul>
+                <li>SGPN: Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation</li>
+                <li>GSPN: Generative Shape Proposal Network for 3D Instance Segmentation in Point Cloud</li>
+                <li>Associatively Segmenting Instances and Semantics in Point Clouds</li>
+                <li>3D-MPA: Multi Proposal Aggregation for 3D Semantic Instance Segmentation</li>
+                <li>PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation</li>
+            </ul>
+            <h4>Reference</h4>
+            <ul>
+                <li>PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space</li>
+                <li>3D Semantic Segmentation with Submanifold Sparse Convolutional Networks</li>
+                <li>Deep Hough Voting for 3D Object Detection in Point Clouds</li>
+                <li class="optional">H3DNet: 3D Object Detection Using Hybrid Geometric Primitives</li>
+                <li class="optional">Generative Sparse Detection Networks for 3D Single-shot Object Detection</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3>Part Segmentation</h3>
+            <h4>Papers to compare</h4>
+            <ul>
+                <li>PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding (baseline)</li>
+                <li>Learning object bounding boxes for 3d instance segmentation on point clouds</li>
+                <li>SGPN: Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation</li>
+                <li>GSPN: Generative Shape Proposal Network for 3D Instance Segmentation in Point Cloud</li>
+                <li>Point Cloud Instance Segmentation using Probabilistic Embeddings</li>
+            </ul>
+            <h4>Reference</h4>
+            <span>The same as Instance Segmentation.</span>
+        </div>
 
-            </BODY>
-</HTML>
+        <div>
+            <h3>Tracking</h3>
+            <h4>Papers to compare</h4>
+            <ul>
+                <li>Scalability in Perception for Autonomous Driving: Waymo Open Dataset</li>
+                <li>3D Multi-Object Tracking: A Baseline and New Evaluation Metrics</li>
+                <li>1st Place Solutions for Waymo Open Dataset Challenges -- 2D and 3D Tracking (1st place)</li>
+                <li>PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection (2nd place)</li>
+            </ul>
+            <h4>Reference</h4>
+            <ul>
+                <li>Multiple Object Tracking: A Literature Review</li>
+                <li>Simple Online and Realtime Tracking</li>
+                <li>Simple Online and Realtime Tracking with a Deep Association Metric</li>
+                </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

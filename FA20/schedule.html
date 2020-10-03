@@ -1,290 +1,34 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>CSE152: Introduction to Computer Vision</title> 
-        <link rel="stylesheet" type="text/css" href="cs468.css">
-    </head>
-    <META http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-    <body>
-        <p>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</br>UNIVERSITY OF CALIFORNIA, SAN DIEGO</p>
-        <h1 align="center">
-            <font color="#800000">CSE291-J00: Deep Learning Lab (Computer Vision)</font>
-        </h1>
-        <p></p>
-        <h2 align="center">
-            <font color="#800000">Fall 2020</font>
-        </h2>
-        <p></p>
-        <br>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div id="content">
-            <div class="underlinemenu">
-                <ul>
-                    <li><a href="index.html#announcements">Announcements</a></li>
-                    <li><a href="index.html#info">General Info</a></li>
-                    <!-- <li><a href="index.html#staff">Course Staff</a></li> -->
-                    <!-- <li><a href="resources.html">Resources</a></li> -->
-                    <li><a href="schedule.html">Schedule &amp; Assignments</a></li>
-                    <li><a href="https://piazza.com/class/k0tedcp5nj24g?cid=5">Piazza</a></li>
-                </ul>
-            </div>
-            <br>
-            <H1 align="center">
-                Schedule and assignments
-                <BR>
-                <BR>
-                <!------------------------------ Intro ------------------------------->
-                <TABLE id="hor-zebra">
-                    <TBODY>
-                        <TR class="odd">
-                            <TD vAlign="top" width="30%"><a href="./slides/L0.pdf">L0: Introduction</a></TD>
-                            <TD vAlign="top">overview of the course, schedule, and teams</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <!--
-                        <TR class="odd">
-                            <TD vAlign="top" width="30%"><a href="./discussion/discussion1.zip">Discussion 1</a></TD>
-                            <TD vAlign="top">Python, Numpy, Matplotlib</a></TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="30%"><a href="./slides/lec03_linearalgebra.pdf">L3: Review: Linear Algebra (Advanced)</a></TD>
-                            <TD vAlign="top">linear space, spectrum decomposition, singular value decomposition, geometry of linear algebra, least-square problem. Please first attend the review of linear algebra basic given by TAs in the week of Oct 1st.</TD>
-                            <TD vAlign="top"><a href="./homeworks/assignment1.zip">Assignment 1: Due 11:59 am Oct 18th (Extended to 11:59am Oct 22nd)</a></TD>
-                        </TR>
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" type="text/css" href="cs468.css">
+</head>
 
-                        <TR class="odd">
-                            <TD vAlign="top" width="30%"><a href="./slides/lec04_harris.pdf">L4: Applications of LinAlg: Least Square and Harris Corner</a></TD>
-                            <TD vAlign="top">least square problem and harris corner detector</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="30%"><a href="./discussion/discussion2.pdf">Discussion 2</a></TD>
-                            <TD vAlign="top">basic matrix calculus, Lagrangian multiplier</a></TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
+<body>
+    <p>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</br>UNIVERSITY OF CALIFORNIA, SAN DIEGO</p>
+    <h1 class="title">CSE291-J00: Deep Learning Lab (Computer Vision)</h1>
+    <p></p>
+    <h2 class="title"><a href="index.html">Fall 2020</a></h2>
+    <p></p>
+    <br>
 
-                        <TR class="even">
-                            <TD></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD><h3>Unit 2:</h3></TD>
-                            <TD><h3>Deep Learning</h3></TD>
-                        </TR>
+    <div id="content">
+        <h2 style="text-align:center">Schedule</h2>
+            <table class="hor-zebra">
+                <tr class="odd">
+                    <td>10/01</td>
+                    <td><a href="slides/L0.pdf">L0: Introduction</a></td>
+                    <td>overview of the course, schedule, and teams</td>
+                </tr>
+            </table>
+    </div>
 
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 15 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec05_unsupervised_learning.pdf">L5: Machine Learning Crash Course (Unsupervised Learning)</a></TD>
-                            <TD vAlign="top">dimension reduction, principal component analysis (PCA)</TD>
-                            <TD vAlign="top"><a href="./slides/ProofforPCAforLecture5.pdf">Proof of PCA</a></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 17 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec06_supervised_learning.pdf">L6: Machine Learning Crash Course (Supervised Learning)</a></TD>
-                            <TD vAlign="top">image classificatin problem, logistic regression, generalization, bias/variance trade-off</TD>
-                            <TD vAlign="top"><a href="./discussion/Week 3 Discussion.zip">Discussion 3</a></TD>
-                        </TR>
+</body>
 
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 22 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec07_cnn.pdf">L7: Neural Networks</a></TD>
-                            <TD vAlign="top">basic idea of deep learning, universal approximation, convolutional neural networks</TD>
-                            <TD vAlign="top">
-                                <a href="./homeworks/assignment2.zip">Assignment 2: Due 11:59 am Nov 5th</a>
-                            </TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 24 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec08_optimization_of_networks.pdf">L8: Network Optimization and Auto-encoder</a></TD>
-                            <TD vAlign="top">stochastic gradient descient, weight decay, dropout</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 25 (Fr)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./homeworks/hw1.ipynb">HW1 Solution</a></TD>
-                            <TD vAlign="top">Reference Solution for HW1</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 25 (Fr)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="discussion/discussion4.ipynb">Discussion 4</a></TD>
-                            <TD vAlign="top">SGD, SVM, and NN</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 29 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec09_det_seg_jiayuan.pdf">L9: Mid-term Exam, Object Detection and Segmentation</a></TD>
-                            <TD vAlign="top">RCNN, Yolo, U-Net</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Oct 31 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec10_3ddl.pdf">L10: 3D Deep Learning</a></TD>
-                            <TD vAlign="top">pointnet, graph CNN, SparseConvNet</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD><h3>Unit 3:</h3></TD>
-                            <TD><h3>Multi-view Geometry</h3></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 2 (Sat)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./resources/CSE152_Fall2019_midterm.pdf">Midterm Solution</a></TD>
-                            <TD vAlign="top">Midterm Solution Reference</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 5 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec11_camera.pdf">L11: Camera Model</a></TD>
-                            <TD vAlign="top">camera model, intrinsic/extrinsic parameters</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 7 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec12_multiview_geometry.pdf">L12: Multiview Geometry</a></TD>
-                            <TD vAlign="top">multi-view geometry, fundamental matrix</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 8 (Fr)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./homeworks/hw2.pdf">HW2 Solution</a></TD>
-                            <TD vAlign="top">Reference Solution for HW2</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 10 (Sun)</DIV>
-                            </TD>
-                            <TD vAlign="top">multi-view geometry, fundamental matrix</TD>
-                            <TD vAlign="top">Assignment 3</TD>
-                            <TD vAlign="top"><a href="./homeworks/cse152_hw3.zip">Assignment 3: Due 11:59 am Nov 19th</a></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 12 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec13_stereo.pdf">L13: Classical Multi-View 3D Reconstruction</a></TD>
-                            <TD vAlign="top">3D reconstruction pipeline</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 14 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec14_deepmvs.pdf">L14: Deep Multi-View 3D Reconstruction</a></TD>
-                            <TD vAlign="top">learning-based stereo reconstruction</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD><h3>Unit 4:</h3></TD>
-                            <TD><h3>Video Analysis</h3></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 19 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec15_optical_flow.pdf">L15: Optical Flow</a></TD>
-                            <TD vAlign="top">optical flow, lucas-kanade algorithm</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 21 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec16_tracking.pdf">L16: Tracking</a></TD>
-                            <TD vAlign="top">KLT tracker, 2D transformations</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 26 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./homeworks/hw4.zip">Homework 4</a></TD>
-                            <TD vAlign="top"><a href="./homeworks/hw4.zip">Assignment 4: Due 11:59 pm Dec 10th</a></TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 26 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec17_deep_action_recognition.pdf">L17: Deep Video Understanding</a></TD>
-                            <TD vAlign="top">cycle-consistency tracker, activity understanding</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 28 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./homeworks/hw3_solution.pdf">HW3 solution</a></TD>
-                            <TD vAlign="top"></TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Nov 28 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%">Thanksgiving</TD>
-                            <TD vAlign="top">holiday, no class</TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD><h3>Unit 5:</h3></TD>
-                            <TD><h3>Review</h3></TD>
-                        </TR>
-                        <TR class="even">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Dec 3 (Tu)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="./slides/lec18_review_I.pdf">L18: Course Review I</a></TD>
-                            <TD vAlign="top"></TD>
-                            <TD vAlign="top"></TD>
-                        </TR>
-                        <TR class="odd">
-                            <TD vAlign="top" width="12%">
-                                <DIV align="center">Dec 5 (Th)</DIV>
-                            </TD>
-                            <TD vAlign="top" width="30%"><a href="">L19: Course Review II</a></TD>
-                            <TD vAlign="top"></TD>
-                            <TD vAlign="top"></TD>
-                        </TR>-->
-                    </TBODY>
-                </TABLE>
-            </H1>
-        </div>
-        </FONT>
-        </H2>
-        </BODY>
-</HTML>
+</html>
